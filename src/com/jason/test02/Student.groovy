@@ -1,6 +1,7 @@
 package com.jason.test02
 
-class Student {
+class Student implements TestInterface {
+
     String name
     Integer age
 
@@ -22,5 +23,15 @@ class Student {
 
     static def m3() {
         '方法3'
+    }
+
+    @Override
+    void a() {
+
+    }
+
+    @Override
+    def b(Object param1) {
+        return null
     }
 }
